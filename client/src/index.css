@@ -1,0 +1,35 @@
+.dropzone {
+  cursor: default;
+}
+
+  .dropzone.dropzone-queue .dropzone-panel .dropzone-remove-all,
+  .dropzone.dropzone-queue .dropzone-panel .dropzone-upload,
+  .dropzone.dropzone-queue .dz-message {
+    display: inline-block;
+    /* opacity: var(--bs-btn-disabled-opacity);
+    pointer-events: none; */
+  }
+
+  .dropzone.dropzone-queue .dropzone-item .dropzone-file .dropzone-filename,
+  .dropzone.dropzone-queue .dropzone-item .dropzone-file .dropzone-filename:hover {
+    color: var(--bs-text-gray-900);
+  }
+
+  .dropzone.dropzone-queue .dropzone-item .dropzone-toolbar .dropzone-start > i,
+  .dropzone.dropzone-queue .dropzone-item .dropzone-toolbar .dropzone-cancel > i,
+  .dropzone.dropzone-queue .dropzone-item .dropzone-toolbar .dropzone-delete > i {
+    color: var(--bs-text-gray-900);
+  }
+
+  .dropzone.dropzone-queue .dropzone-item .dropzone-image {
+    width: 120px;
+    height: 120px;
+    border-radius: .475rem;
+    margin-right: .5rem;
+  }
+
+    .dropzone.dropzone-queue .dropzone-item .dropzone-image img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }

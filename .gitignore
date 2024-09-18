@@ -1,0 +1,7 @@
+*node_modules/
+u2net-models/*
+!u2net-models/
+public/upload/*
+!public/upload/
+.vscode/
+!.gitkeep

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<!--begin::Head-->
+<head>
+  <title>Background Removal Tool</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/svg+xml" href="/build/media/logos/favicon.svg" />
+  <!--begin::Fonts(mandatory for all pages)-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+  <!--end::Fonts-->
+  <!--begin::Vendor Stylesheets(used for this page only)-->
+  <link href="/build/theme/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+  <!--end::Vendor Stylesheets-->
+  <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+  <link href="/build/theme/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="/build/theme/css/style.bundle.css" rel="stylesheet" type="text/css" />
+  <!--end::Global Stylesheets Bundle-->
+  <link href="{{cacheBusting '/build/app.css' ''}}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="{{cacheBusting '/build/index.css' ''}}">
+</head>
+<!--end::Head-->
+<!--begin::Body-->
+<body id="kt_app_body" class="app-default">
+{{!-- <body id="kt_app_body" class="app-blank"> --}}
+  <!--begin::Content-->
+  <div id="kt_app_content" class="app-content">
+    <!--begin::Content container-->
+    <div id="kt_app_content_container" class="app-container container">
+      <!--begin::Card-->
+      <div class="card card-flush">
+        <!--begin::Card header-->
+        <div class="card-header pt-8">
+          <!--begin::Title-->
+          <h3 class="card-title align-items-start flex-column">
+            <span class="card-label fw-bold"><img alt="Logo" src="/build/media/logos/default-small.svg" class="h-25px me-2">Background Removal Tool</span>
+            <span class="mt-1 fw-semibold fs-6">Upload files with the "Attach files" button and remove the background with the "Remove Background" button.</span>
+          </h3>
+          <!--end::Title-->
+        </div>
+        <!--end::Card header-->
+        <!--begin::Card body-->
+        <div class="card-body">
+          <!--begin::Dropzone-->
+          <div class="dropzone dropzone-queue" id="dropzone">
+            <!--begin::Controls-->
+            <div class="dropzone-panel mb-lg-0 mb-2">
+              <button type="button" class="dropzone-select btn btn-sm btn-primary">Attach files</button>
+              <button type="button" class="dropzone-upload btn btn-sm btn-primary" id="uploadButton" disabled>Remove Background</button>
+              <button type="button" class="dropzone-remove-all btn btn-sm btn-primary" id="removeAllButton" disabled>Cancel All</button>
+            </div>
+            <!--end::Controls-->
+            <!--begin::Items-->
+            <div class="dropzone-items wm-200px">
+              <div class="dropzone-item" style="display:none">
+                <div class="dropzone-image">
+                  <img data-dz-thumbnail />
+                </div>
+                <!--begin::File-->
+                <div class="dropzone-file">
+                  <div class="dropzone-filename" title="some_image_file_name.jpg">
+                    <span data-dz-name>some_image_file_name.jpg</span>
+                    <strong>( <span data-dz-size>340kb</span>) </strong>
+                  </div>
+                  <div class="dropzone-error" data-dz-errormessage></div>
+                </div>
+                <!--end::File-->
+                <!--begin::Progress-->
+                <div class="dropzone-progress">
+                  <div class="progress">
+                    <div class="progress-bar bg-primary" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-dz-uploadprogress></div>
+                  </div>
+                </div>
+                <!--end::Progress-->
+                <!--begin::Toolbar-->
+                <div class="dropzone-toolbar">
+                  <span class="dropzone-start">
+                    <i class="bi bi-play-fill fs-3"></i>
+                  </span>
+                  <span class="dropzone-cancel" data-dz-remove style="display: none;">
+                    <i class="bi bi-x fs-3"></i>
+                  </span>
+                  <span class="dropzone-delete" data-dz-remove>
+                    <i class="bi bi-x fs-1"></i>
+                  </span>
+                </div>
+                <!--end::Toolbar-->
+              </div>
+            </div>
+            <!--end::Items-->
+          </div>
+          <!--end::Dropzone-->
+        </div>
+        <!--end::Card body-->
+      </div>
+      <!--end::Card-->
+    </div>
+    <!--end::Content container-->
+  </div>
+  <!--end::Content-->
+  <!--begin::Scrolltop-->
+  <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+    <i class="ki-duotone ki-arrow-up">
+      <span class="path1"></span>
+      <span class="path2"></span>
+    </i>
+  </div>
+  <!--end::Scrolltop-->
+  <!--begin::Javascript-->
+  <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+  <script src="/build/theme/plugins/global/plugins.bundle.js"></script>
+  <script src="/build/theme/js/scripts.bundle.js"></script>
+  <!--end::Global Javascript Bundle-->
+  <!--begin::Vendors Javascript(used for this page only)-->
+  <script src="/build/theme/plugins/custom/datatables/datatables.bundle.js"></script>
+  <!--end::Vendors Javascript-->
+  <!--begin::Custom Javascript(used for this page only)-->
+  <script src="{{cacheBusting '/build/index.js' ''}}"></script>
+  <!--end::Custom Javascript-->
+  <!--end::Javascript-->
+</body>
+<!--end::Body-->
+</html>
